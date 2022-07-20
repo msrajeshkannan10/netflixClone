@@ -1,0 +1,662 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:400,500,700);
+@import url(https://fontawesome.com/icons);
+.whole img {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+}
+.whole {
+  color: white;
+
+  /* display: flex; */
+  justify-content: center;
+  background-image: url("../images/background.png");
+  width: 100%;
+  height: 610px;
+}
+.whole .img-gradient {
+  background: rgba(0, 0, 0, 0.4);
+
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.nav_container {
+  display: flex;
+  justify-items: right;
+  z-index: 3;
+}
+.nav-btn {
+  display: flex;
+  position: absolute;
+  align-items: right;
+  margin-left: 75%;
+  width: 275px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.nav-btn button {
+  /* position: absolute; */
+  /* margin-left: 90%; */
+  margin-top: 10px;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(189, 10, 19);
+  color: white;
+  border-width: 0;
+  border-radius: 5px;
+}
+.nav_container button:hover {
+  background-color: rgb(232, 12, 23);
+}
+.logo img {
+  position: absolute;
+  padding-left: 20px;
+  width: 10.75rem;
+  margin-top: 10px;
+  height: 6rem;
+}
+.content {
+  position: relative;
+  text-align: center;
+  padding: 75px 10px 75px 10px;
+  width: 98%;
+  z-index: 1;
+  margin-top: 90px;
+  justify-content: center;
+}
+.content h1 {
+  font-size: 55px;
+  padding: 0px 280px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.content h2 {
+  /* padding-top: 20px; */
+  font-size: 1.625rem;
+}
+.content h3 {
+  font-size: 1.25rem;
+  padding: 0 10%;
+}
+#Email {
+  /* display: flex; */
+  padding: 22px 10px;
+  border-width: 0;
+  text-align: left;
+  font-size: 15px;
+  text-align: left;
+  width: 550px;
+  border: none;
+}
+#Email:focus {
+  border: 5px solid rgb(8, 149, 173);
+  /* border-width: 0; */
+}
+#Email::placeholder {
+  position: absolute;
+  left: 10px;
+  color: #8c8c8c;
+  font-size: 14px;
+  text-align: left;
+}
+/* #Email {
+    /* border-color: rgb(17, 201, 233); */
+/* border: 5px solid blue;
+}  */
+.start-btn {
+  padding: 20px;
+  padding-bottom: 8px;
+  padding-top: 5px;
+  width: 205px;
+
+  height: 60px;
+  background-color: rgb(156, 9, 16);
+  color: white;
+  border-width: 0;
+  font-size: 25px;
+}
+.start-btn:hover {
+  background-color: rgb(232, 12, 23);
+}
+.start-btn i {
+  padding-left: 10px;
+
+  font-size: 20px;
+}
+
+.content-2 {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  /* height: 450px; */
+  background-color: rgb(124, 124, 124);
+  padding-top: 10px;
+}
+.child-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  width: 100%;
+  height: 450px;
+  /* align-items: center; */
+  justify-content: center;
+  color: #fff;
+  padding-left: 70px;
+  background-color: black;
+}
+.child-1 > h1 {
+  font-size: 50px;
+  margin: 0px;
+}
+.child-1 > p {
+  font-size: 27px;
+}
+.child-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  width: 100%;
+  height: 450px;
+  /* padding: 70px; */
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+.card-animation-1 {
+  top: 36% !important;
+  left: 47% !important;
+}
+.card-animation-video {
+  width: 110% !important;
+  height: 140% !important;
+}
+.download-card-animator {
+  position: absolute;
+  left: 50%;
+  bottom: 16%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: #000;
+  display: flex;
+  border-radius: 5px;
+  z-index: 2;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  width: 320px;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+.download-card-animator::after {
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  display: block;
+  width: 20%;
+  height: 65px;
+  content: "";
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    center center no-repeat;
+  background-size: 100% 100%;
+}
+.download-card-animator > img {
+  width: 70px;
+  height: 70px;
+}
+.download-text {
+  color: #fff;
+  font-weight: 600;
+}
+.card-animation > video {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+  height: 100%;
+}
+.card-animation {
+  transform: translate(-50%, -50%);
+  height: 180px;
+  /* width: 100%; */
+  /* max-width: 88%; */
+  /* max-height: 33%; */
+  position: absolute;
+  top: 37%;
+  left: 50%;
+}
+.child-2 > img {
+  width: 80%;
+  height: 350px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.content-3 {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  /* height: 440px; */
+  padding: 75px 45px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* padding-left: 70px; */
+  background-color: black;
+}
+
+.content-3 > h1 {
+  font-size: 50px;
+}
+.faq-card {
+  /* position: relative; */
+  /* display: inline-block; */
+  width: 700px;
+  /* height: auto; */
+  background-color: #303030;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.faq-card-heading {
+  position: relative;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  /* padding-right: 325px; */
+  /* padding: 0px 100px; */
+  /* width: 100%; */
+  /* heigh ; */
+  cursor: pointer;
+}
+.faq-card-heading > p {
+  padding: 10px 20px 5px 20px;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  /* padding: 5px; */
+  background-color: black;
+  z-index: 1;
+}
+.para {
+  padding: 10px 20px;
+  /* width: 95%; */
+  /* height: 100px; */
+  display: block;
+  padding-top: 25px;
+  /* display: none; */
+  /* position: absolute; */
+  /* overflow: hidden; */
+  font-size: 25px;
+  background-color: #303030;
+  /* z-index: 1; */
+}
+
+#plus {
+  padding-top: 35px;
+  padding-right: 20px;
+  cursor: pointer;
+  /* transition: all .2s ease-in-out; */
+}
+.accordin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add {
+  display: block;
+  width: 28px;
+  height: 2px;
+}
+.add > i {
+  width: 30px;
+  height: 20px;
+  font-size: 35px;
+}
+.sigin-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.sigin-2 > h3 {
+  text-align: center;
+}
+.content-4 {
+  width: 100%;
+  height: auto;
+  background-color: rgb(124, 124, 124);
+  padding-top: 10px;
+}
+.footer-content > h5 {
+  padding-left: 260px;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  /* flex: 0.5; */
+  width: 100%;
+  /* height: 450px; */
+  /* align-items: center; */
+  justify-content: space-around;
+  color: #fff;
+  /* padding-left: 70px; */
+  background-color: black;
+  padding-top: 10px;
+}
+.list {
+  list-style-type: none;
+  padding-left: 260px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+.list li {
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 25%;
+}
+.list li > a {
+  text-decoration: none;
+  color: #5c5a5a;
+}
+.footer-content-bottom {
+  padding-left: 260px;
+}
+.footer-content-bottom p {
+  color: #757575;
+}
+.select-btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.select-btn-1 {
+  /* position: absolute;
+  margin-left: 78%; */
+  margin-top: 2px;
+  padding: 10px 0px;
+}
+.select-btn-1::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0ac";
+  color: #fff;
+  position: absolute;
+  font-weight: 900;
+  padding: 10px 10px 10px 17px;
+}
+.lang {
+  color: #fff;
+}
+.select-btn-1 > select {
+  display: flex;
+  align-items: right;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 5px;
+}
+.select-btn > select {
+  display: flex;
+  /* justify-content: space-between; */
+  color: #757575;
+  width: 150px;
+  height: 50px;
+  padding: 12px;
+  padding-left: 36px;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  color: #999;
+  font-size: 16px;
+}
+.select-btn::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0ac";
+  color: #999;
+  position: absolute;
+  /* top: 15px;
+    left: 17px; */
+  font-weight: 900;
+  padding: 18px 10px 10px 17px;
+  font-size: 16px;
+}
+
+.footer-content-1 {
+  display: inline-block;
+}
+.footer-content-1 > a {
+  text-decoration: none;
+  color: #5c5a5a;
+}
+
+@media screen and (max-width: 425px) {
+  .home {
+    width: 100%;
+  }
+  .whole {
+    width: 100%;
+    /* padding: 25px 35px; */
+  }
+  .logo img {
+    padding: 10px 10px;
+  }
+  .nav-btn button {
+    /* margin-left: 485px; */
+    margin-top: 20px;
+    padding: 10px;
+    width: 25%;
+    font-size: 20px;
+  }
+  .select-btn-1 {
+    margin-top: 10px;
+    /* margin-left: 73%; */
+  }
+  .select-btn-1::before {
+    font-weight: 900;
+    margin-top: 3px;
+  }
+  .select-btn-1 > select {
+    font-size: 20px;
+  }
+  .content {
+    padding: 20px;
+    width: 100%;
+  }
+  .content > h1 {
+    font-size: 50px;
+    padding: 20px;
+  }
+  .content > h2 {
+    font-size: 30px;
+  }
+  .content-2 {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .child-1 {
+    width: 100%;
+    padding: 25px 35px;
+  }
+  .content-media {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .content-3 {
+    width: 100%;
+    text-align: center;
+  }
+  .faq-card {
+    width: 100%;
+  }
+  .para {
+    text-align: left;
+  }
+  .sigin-2 {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    padding: 25px 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .sigin-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-4 {
+    width: 630px;
+  }
+  .footer-content > h5 {
+    margin-top: 10px;
+    padding-top: 160px;
+    padding-left: 40px;
+    font-size: 30px;
+  }
+  .list {
+    padding: 25px 40px;
+    font-size: 20px;
+  }
+  .list > li {
+    width: 50%;
+  }
+  .footer-content-bottom {
+    padding-left: 40px;
+  }
+  .select-btn > select {
+    font-size: 20px;
+  }
+  .footer-content-bottom > p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    width: 193%;
+  }
+  .whole {
+    width: 100%;
+    background-size: 100%;
+  }
+  .nav-btn {
+    width: 445px;
+    margin-left: 135%;
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+  .nav-btn button {
+    /* margin-left: 485px; */
+    margin-top: 20px;
+    padding: 10px 0px;
+    width: 33%;
+    height: 60px;
+    font-size: 28px;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  /* .nav-btn {
+    width: 100%;
+  } */
+  .select-btn-1 {
+    margin-top: 10px;
+    /* margin-left: 73%; */
+    font-size: 28px;
+  }
+  .select-btn-1::before {
+    font-weight: 900;
+    margin-top: 7px;
+  }
+  .select-btn-1 > select {
+    font-size: 28px;
+    padding: 16px 45px;
+  }
+  .content {
+    padding: 100px 50px;
+    width: 100%;
+    height: 480px;
+  }
+  .child-1 > h1 {
+    font-size: 2.5rem;
+  }
+  .content > h1 {
+    font-size: 50px;
+    padding: 20px;
+  }
+  .content > h2 {
+    font-size: 30px;
+  }
+  .content-2 {
+    /* width: 630px; */
+    flex-direction: column;
+    text-align: center;
+  }
+  .child-1 {
+    /* width: 560px; */
+    padding: 25px 35px;
+  }
+  .content-media {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .content-3 {
+    /* width: 540px; */
+    text-align: center;
+  }
+  /* .faq-card {
+    width: 630px;
+  } */
+  .para {
+    text-align: left;
+  }
+  .sigin-2 {
+    display: flex;
+    flex-direction: column;
+    /* width: 540px; */
+    padding: 25px 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .sigin-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .content-4 {
+    width: 630px;
+  } */
+  .footer-content > h5 {
+    margin-top: 10px;
+    padding-top: 160px;
+    padding-left: 40px;
+    font-size: 30px;
+  }
+  .list {
+    padding: 25px 40px;
+    font-size: 20px;
+  }
+  .list > li {
+    width: 50%;
+  }
+  .footer-content-bottom {
+    padding-left: 40px;
+  }
+  .select-btn > select {
+    font-size: 20px;
+  }
+  .footer-content-bottom > p {
+    font-size: 20px;
+  }
+}
